@@ -1,0 +1,14 @@
+CREATE TABLE Person (
+    PersonID INTEGER PRIMARY KEY,
+    FraudType VARCHAR,
+    FDate Date,
+    Social_media VARCHAR,
+    Details TEXT
+);
+
+CREATE TABLE Name(
+    NID INTEGER PRIMARY KEY,
+    PersonID INTEGER,
+    NameValue CHAR,
+    FOREIGN KEY (PersonID) REFERENCES Person(PersonID)
+);
