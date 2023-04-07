@@ -136,7 +136,7 @@ def conn_db():
     return db
 
 def framework():
-    st.title('数据库查询')
+    st.title('Database Queries')
     db = conn_db()
     cursor = db.cursor()
  
